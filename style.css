@@ -1,0 +1,994 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Playpen Sans', cursive;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0,3);     
+    background: rgba(0,0,0,0);    
+}
+  
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    background-color: #a1a3a9;
+    min-width: 100%;
+    height: 80px;
+    z-index: 1;
+    position: fixed;
+}
+.logo{
+    margin-top: 5px;
+    height: 50px;
+    width: 60px;
+    float: left;
+}
+.title{
+    font-size: 15px;
+    margin-left: 10px;
+    float: left;
+    margin-top: 20px;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin-left: auto ;
+    margin-top: 25px;
+
+}
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    font-family: 'Playpen Sans', cursive;
+    display: flex;
+}
+header ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    width: max-content;
+    transition: all;
+    transition-duration: 1s;
+    padding: 5px;
+}
+.clock {
+    display: flex;
+    color: black;
+    font-size: 15px;
+    font-family: 'Playpen Sans', cursive;
+    letter-spacing: 5px; 
+    padding: 5px;
+    background-color: rgba(0,0,0,0);
+    position:absolute;
+    left: 45%;
+    top: 25px;
+}
+#home{
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+#home-container{
+    padding: 15px;
+    height: max-content;
+    width: 700px;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    margin-top: 15%;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-direction: column;
+}
+.title-home{
+    border-radius: 10px;
+    font-size: 3rem;
+    color: black;
+    background-color: #ffffff2e;
+    
+}
+.home-text{
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: black;
+    background-color: #ffffff2e;
+}
+
+
+#candi{
+    background-color:  #402b20;
+    min-height: 70vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#box-candi{
+    padding: 20px;
+    display: flex;
+    background-color: rgba(0,0,0,0);
+    width: auto;
+    height: auto;
+    flex-direction: column;
+}
+#candi-title{
+    font-size: 2rem;
+    color: white;
+}
+.list-candi{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+.img-size-candi{
+    height: 150px;
+    width: 250px;
+    border: 8px solid white;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+.list-candi a{
+    color: white;
+    text-decoration: none;
+}
+#des-candi{
+    font-size: 1em;
+    color: white;
+}
+
+
+
+#ticket{
+    background-color: #483427;
+    min-height: 70vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#box-ticket{
+    padding: 20px;
+    display: flex;
+    background-color: rgba(0,0,0,0);
+    width: auto;
+    height: auto;
+    flex-direction: column;
+}
+#title-ticket{
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+#container-tic{
+    margin-top: 50px;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    flex-direction: row;
+
+}
+.img-ticket{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.805);
+    margin-left: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 18px;
+    border: 8px solid rgb(0, 0, 0);
+}
+#des-tic{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(250, 249, 249, 0.135);
+    margin-top: 40px;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+
+#about-us{
+    min-height: 70vh;
+    padding: 20px;
+    display: flex;
+    background-color: #574135;
+    text-align: center;
+    flex-direction: column;
+
+}
+#container-profile{
+    height: auto;
+    width: auto;
+    padding: 15px;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+.team-img{
+    height: 130px;
+    width: 130px;
+    border-radius: 15px;
+    border: 10px solid #ffffff41;
+    margin-left: 15px;
+}
+figcaption{
+    color: black;
+    margin-left: 25px;
+    background-color: #ffffff41;
+    border-radius: 5px;
+}
+#our-history{
+    color: white;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+#text-history{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 13px;
+    font-size:15px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.137);
+}
+
+
+#contact-us{
+    min-height: 80vh;
+    padding: 20px;
+    display: flex;
+    background-color: #604d41;
+    justify-content: center;
+    text-align: center;
+}
+#h1-contact{
+    margin-top: 30px;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 2rem;
+    color: white;
+}
+.box-contact{
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+}
+.box-contact h1{
+    text-align: center;
+}
+.container-contact{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0,0,0,0);
+    gap: 3em;
+    padding: 30px;
+}
+.container-contact2{
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0,0,0,0);
+    padding: 30px;
+    justify-content: center;
+}
+.content-contact{
+    padding: 15px;
+    width: max-content;
+    height: 150px;
+    background-color: #ffffffcd;
+    border-radius: 15px;
+}
+.content-contact2{
+    margin-left: 3em;
+    padding: 15px;
+    width: max-content;
+    height: 150px;
+    background-color: #ffffffcd;
+    border-radius: 15px;
+}
+
+.member-name{
+    margin-top: 10px;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 2rem;
+}
+.member-name2{
+    margin-top: 10px;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 2rem;
+}
+.container-contact ul{
+    list-style: none;
+}
+.container-contact2 ul{
+    list-style: none;
+}
+.content-contact ul li{
+    font-family: 'Playpen Sans', cursive;
+    text-decoration: none;
+}
+.content-contact2 ul li{
+    font-family: 'Playpen Sans', cursive;
+    text-decoration: none;
+}
+
+
+#advertisement{
+    min-height: 200vh;
+    padding: 20px;
+    display: flex;
+    background-color: #674f40;
+    flex-direction: column;
+    text-align: center;
+}
+
+#h1-iklan{
+    color: white;
+    margin-top: 30px;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 2rem;
+}
+#content-iklan{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#img-size-iklan{
+    width: 240px;
+    height: 350px;
+    border-radius: 15px;
+}
+#h2-iklan{
+    margin-top: 30px;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 1rem;
+    background-color: #ffffff41;
+    padding: 15px;
+    border-radius: 15px;
+}
+#box-iklan{
+    background-color: rgba(0,0,0,0);
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+video{
+    margin-top: 40px;
+    height: 200px;
+    width: 350px;
+    border-radius: 15px;
+
+}
+#ling-hidup{
+    height: 300px;
+    width: 600px;
+    margin: 30px;
+    border-radius: 15px;
+}
+#text-ling{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+#vid-text{
+    background-color: #ffffff41;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 1rem;
+}
+footer{
+    max-width: 100%;
+    padding-top: 20px;
+    font-size: 1rem;
+    height: 80px;
+    background-color: #a1a3a9;
+    width: 100%;
+
+}
+.text-footer{
+    font-family: 'Playpen Sans', cursive;
+    background-color: none;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+ }
+
+
+ #pengunjung{
+    min-height: 90vh;
+    padding: 20px;
+    display: flex;
+    background-color: #e9ecea;
+    text-align: center;
+    justify-content: center;
+}
+.box-pengunjung{
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: rgba(0,0,0,0);
+    margin-top: 30px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statistika{
+    margin-top: 30px;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+}
+#table{
+    background-color: white;
+    margin-top: 50px;
+}
+
+
+/* -------------CANDI PAGE---------------- */
+
+#candi-prambanan{
+    background-color: #483427;
+    min-height: 90vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#h1-prambanan{
+    font-size: 2rem;  
+    margin-top: 10px;
+    color: white;
+}
+.img-size-cp{
+    margin: 15px;
+    margin-top: 50px;
+    height: 250px;
+    width: 400px;
+    border-radius: 20px;
+    border: 10px solid white;
+}
+.box-candi{
+    width: auto;
+    height: auto;
+    background-color: rgba(0,0,0,0);
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+button{
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 15px;
+    background-color: white;
+    color: black;
+    font-family: 'Playpen Sans', cursive;
+}
+.read-more{
+    text-decoration: none;
+    color: white;
+}
+#demo{
+    color: black;
+    background-color: #ffffff41;
+    border-radius: 15px;
+}
+
+
+#candi-kalasan{
+    background-color: #574135;
+    min-height: 90vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.box-kalasan{
+    width: auto;
+    height: auto;
+    background-color: rgba(0,0,0,0);
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#h1-kalasan{
+    font-size: 2rem;  
+    margin-top: 10px;
+    color: white;
+}
+.img-size-c{
+    margin-top: 50px;
+    height: 250px;
+    width: 400px;
+    border-radius: 20px;
+    margin: 15px;
+    border: 10px solid white;
+}
+#demo2{
+    padding: 8px;
+    color: black;
+    background-color: #ffffff41;
+    border-radius: 15px;
+}
+
+
+
+#candi-RB{
+    min-height: 90vh;
+    padding: 20px;
+    display: flex;
+    background-color: #604d41;
+    text-align: center;
+    justify-content: center;
+}
+.box-RB{
+    width: auto;
+    height: auto;
+    background-color: rgba(0,0,0,0);
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#h1-RB{
+    font-size: 2rem;  
+    margin-top: 10px;
+    color: white;
+}
+
+#demo3{
+    padding: 8px;
+    color: black;
+    background-color: #ffffff41;
+    border-radius: 15px;
+}
+
+/* ----------------ticket-------------------- */
+.text-tic{
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #ffffff41;
+    border-radius: 15px;
+}
+.img-size-tic{
+    margin-top: 30px;
+    height: 300px;
+    width: 450px;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+.platform{
+    margin-left: 20px;
+    margin-top: 80px;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+#prambanan-ticket{
+    background-color: #483427;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#box-tic-p{
+    margin-top: 100px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+}
+#h1-ptick{
+    font-size: 2rem;
+    color: white;
+}
+
+
+#kalasan-ticket{
+    background-color: #574135;
+    min-height: 90vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.img-size-tic2{
+    margin-top: 30px;
+    height: 300px;
+    width: 450px;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+.box-ticket{
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    text-align: center;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+.h1-ticket{
+    font-size: 2rem;
+    margin-top: 20px;
+    color: white;
+}
+.text-candi-tic{
+    font-size: 1.3rem;
+    margin-top: 20px;
+    background-color: #ffffff41;
+    border-radius: 15px;
+}
+.logo-tic{
+    margin-top: 30PX;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+#RB-ticket{
+    min-height: 90vh;
+    padding: 20px;
+    display: flex;
+    background-color: #604d41;
+    text-align: center;
+    justify-content: center;
+}
+.box-ticket2{
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ------------TICKET PESAWAT--------------- */
+#tiket-com{
+    background-color: #604d41;
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#box-tiket-com{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+}
+
+#h1-tiket-com{
+    font-size: 1.8rem;
+    color: white;
+}
+#logo-size{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-top: 50px;
+}
+.step{
+    font-size: 15px;
+    margin-top: 20px;
+    color: white;
+}
+#box-tiket-com ul{
+    width: 1300px;
+    list-style: none;
+    margin-top: 25px;
+    background-color: #ffffff41;
+    padding: 8px;
+    border-radius: 15px;
+}
+#box-tiket-com ul li{
+    text-align: left;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+#traveloka{
+    background-color: #674f40;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+.tra-box{
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    width: auto;
+    height: auto;
+    align-items: center;
+}
+.tra-box ul{
+    display: flex;
+    background-color: #ffffff41;
+    padding: 15px;
+    border-radius: 15px;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+#h1-tra{
+    font-size: 1.8rem;
+    color: white;
+}
+#img-tra{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-top: 30px;
+}
+.tra-box ul{
+    list-style: none;
+    float: left;
+    margin-top: 25px;
+}
+.tra-box ul li{
+    text-align: left;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+/* --------------TIKET HOTEL---------------- */
+#ticket-com-hotel{
+    background-color: #483427;
+    min-height: 90vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#box-tiket-com-hotel{
+    margin-top: 100px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+}
+#box-tiket-com-hotel ul{
+    background-color: #ffffff41;
+    padding: 10px;
+    border-radius: 15px;
+}
+#h1-tiket-com-hotel{
+    font-size: 1.8rem;
+    color: white;
+}
+#logo-size-hotel{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-top: 50px;
+}
+.step-hotel{
+    font-size: 15px;
+    margin-top: 20px;
+    color: white;
+}
+#box-tiket-com-hotel ul{
+    list-style: none;
+    float: left;
+    margin-top: 25px;
+}
+#box-tiket-com-hotel ul li{
+    text-align: left;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+#traveloka-hotel{
+    background-color: #574135;
+    min-height: 90vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.tra-box-hotel{
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    text-align: center;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+.tra-box-hotel ul{
+    background-color: #ffffff41;
+    padding: 10px;
+    border-radius: 15px;
+    width: auto;
+}
+#h1-tra-hotel{
+    font-size: 1.8rem;
+    color: white;
+}
+#img-tra-hotel{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-top: 30px;
+}
+.tra-box-hotel ul{
+    list-style: none;
+    float: left;
+    margin-top: 25px;
+}
+.tra-box-hotel ul li{
+    text-align: left;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+/*----------crud-------------*/
+.crud{
+    background-color: white;
+    min-height: 90vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* -------------------RESPONSIVE---------------------- */
+@media (min-width:320px) and (max-width:767px) {
+
+    .title{
+        margin-top: -20px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    header ul{
+        margin-right: auto;
+        text-align: center;
+    }
+    header ul li a{
+        font-size: 0.4rem;
+    }
+    #home-container{
+        margin-top: 200px;
+    }
+    .clock{
+        margin-left: 100px;
+        float: right;
+        font-size: 10px;
+    }
+    .list-candi{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .des{
+        margin-bottom: 20px;
+    }
+    #container-profile{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact-us{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-contact{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        align-items: center;
+    }
+    .content-contact{
+        font-size: 10px;
+    }
+    .container-contact2{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        align-items: center;
+    }
+    .content-contact2{
+        margin-left: -10px;
+        font-size: 10px;
+        margin-bottom: 50px;
+    }
+    .statistika{
+        width: auto;
+        height: auto;
+    }
+    #table{
+        overflow: auto;
+        text-align: center;
+    }
+    table{
+        width: auto;
+        font-size: 12px;
+    }
+    #video{
+        width: 280px;
+        height: 150px;
+    }
+    .img-size-cp{
+        height: 150px;
+        width: 300px;
+    }
+    .img-size-c{
+        height: 150px;
+        width: 300px;
+    }
+    .img-size-tic{
+        height: 200px;
+        width: 350px;
+    }
+    .img-size-tic2{
+        height: 200px;
+        width: 350px;
+    }
+    #ling-hidup{
+        height: 150px;
+        width: auto;
+    }
+    #box-tiket-com ul{
+        flex-direction: column;
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+    .tra-box ul{
+        flex-direction: column;
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+    #box-tiket-com{
+        height: auto;
+        width: auto;
+    }
+}
